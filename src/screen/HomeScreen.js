@@ -1,17 +1,25 @@
 import React from 'react';
-import { Text, StyleSheet } from 'react-native';
+import { Text, StyleSheet,View } from 'react-native';
 
 const HomeScreen = () => {
-  return <Text style={styles.text}>Welcome Man</Text>;
+  const demoText = <Text style = {styles.veriableText}>Welcome Demo Text</Text>;
+  return(
+  <View>
+  <Text style={styles.text}>Welcome Man</Text>
+  {demoText}
+  </View>
+  );
 };
 
 const styles = StyleSheet.create({
   text: {
+    fontSize:50,
     textAlign: 'center',
     backgroundColor: 'red',
     // justifyContent:'center',
-
-    fontSize: 30
+  },
+  veriableText: {
+    backgroundColor: 'pink'
   }
 });
 
