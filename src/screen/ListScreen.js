@@ -32,9 +32,46 @@ const ListScreen = (props) =>
                }}
                title = "Go to Home Screen"
             />
+
+            <Button 
+                onPress = {()=> {
+                console.log("Second Pressed")
+                props.navigation.navigate('Components')
+                }}
+                title = "ComponentsScreen"
+            />
+            <Button 
+                onPress = {()=> {
+                console.log("TExt Page Pressed")
+                props.navigation.navigate('TextSize')
+                }}
+                title = "Text Size Example"
+            />
+            <Button 
+                onPress = {()=> {
+                console.log("Note Pad Pressed")
+                props.navigation.navigate('Notepad')
+                }}
+                title = "Note Pad"
+            />
+            <Button 
+                onPress = {()=> {
+                console.log("Note Pad Pressed")
+                props.navigation.navigate('CalendarWithEvents')
+                }}
+                title = "CalendarWithEvents"
+            />
+            <Button 
+                onPress = {()=> {
+                console.log("ButtonMatrix")
+                props.navigation.navigate('ButtonMatrix')
+                }}
+                title = "ButtonMatrix"
+            />
             <TouchableOpacity
-            onPress = {() => console.log("Click on Touchable Opacity Button")}
-            >
+            onPress = {() =>
+                props.navigation.navigate('Components')
+             }>
                 <Text>Go to ComponentsScreen</Text>
                 <Text>Go to ComponentsScreen</Text>
                 <Text>Go to ComponentsScreen</Text>
