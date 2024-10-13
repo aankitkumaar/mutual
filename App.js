@@ -8,6 +8,7 @@ import TextSizeExample from './src/screen/TextSizeExample';
 import Notepad from './src/screen/Notepad';
 import CalendarWithEvents from './src/screen/CalendarWithEvents';
 import ButtonMatrix from './src/screen/ButtonMatrix';
+import QrCodeScreen from './src/screen/QrCodeScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -48,6 +49,11 @@ const App = () => {
         <Stack.Screen 
           name="ButtonMatrix" 
           component={ButtonMatrix} 
+          // options={{ title: 'Components' }} 
+        />
+        <Stack.Screen 
+          name="QrCodeScreen" 
+          component={QrCodeScreen} 
           // options={{ title: 'Components' }} 
         />
       </Stack.Navigator>
